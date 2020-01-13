@@ -81,12 +81,12 @@ setup(
         'requests',
         'tornado==4.5.3',
         'pysoundfile',
-        'matplotlib',
+        'matplotlib==1.5.0',
         'argparse',
         'ujson',
-        'numpy',
-        'scipy',
-        'torch'
+        'numpy==1.15.3',
+        'scipy==1.2.1',
+        'torch==0.4.1'
     ],
     package_data={
         'nputil': ['*.pyx', '*.pyxbld'],
