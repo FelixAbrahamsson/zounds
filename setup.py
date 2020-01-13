@@ -15,7 +15,7 @@ with open('zounds/__init__.py', 'r') as fd:
         fd.read(),
         re.MULTILINE).group(1)
 
-download_url = 'https://github.com/jvinyard/zounds/tarball/{version}' \
+download_url = 'https://github.com/felixabrahamsson/zounds/tarball/{version}' \
     .format(**locals())
 
 on_rtd = os.environ.get('READTHEDOCS') == 'True'
@@ -81,12 +81,12 @@ setup(
         'requests',
         'tornado==4.5.3',
         'pysoundfile',
-        'matplotlib==1.5.0',
+        'matplotlib',
         'argparse',
         'ujson',
-        'numpy==1.15.3',
-        'scipy==1.2.1',
-        'torch==0.4.0'
+        'numpy',
+        'scipy',
+        'torch'
     ],
     package_data={
         'nputil': ['*.pyx', '*.pyxbld'],
